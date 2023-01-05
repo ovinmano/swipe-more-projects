@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.container{
+max-width: 1200px;
+margin: 0 auto;
+text-align: center;
+}
+.container .heading{
+font-size: 40px;
+margin-bottom: 20px;
+
+}
+.container .box-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap: 25px;
+}
+.container .box-container .box{
+display: none;
+}
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2){
+display: inline-block;
+}
+.container .box-container .box .image{
+margin-bottom: 20px;
+overflow: hidden;
+height: 250px;
+margin: auto;
+border-radius: 5px;
+background: #000;
+padding: 10px;
+}
+.container .box-container .box .image img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+#load-more{
+margin-top: 20px;
+display: inline-block;
+padding: 10px 30px;
+border: 1px solid #334;
+color: #334;
+font-size: 16px;
+}
